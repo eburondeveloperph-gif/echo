@@ -1,4 +1,4 @@
-import type { Platform } from '@/platform/types';
+import type { Platform } from '@app/platform/types';
 import { tauriFilesystem } from './filesystem';
 import { tauriUpdater } from './updater';
 import { tauriAudio } from './audio';

@@ -1,4 +1,4 @@
-import type { PlatformLifecycle } from '@/platform/types';
+import type { PlatformLifecycle } from '@app/platform/types';
 
 class WebLifecycle implements PlatformLifecycle {
   onServerReady?: () => void;

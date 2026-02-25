@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import App from '../../app/src/App';
-import '../../app/src/index.css';
-import { PlatformProvider } from '../../app/src/platform/PlatformContext';
-import { webPlatform } from './platform';
+import App from '@app/App';
+import '@app/index.css';
+import { PlatformProvider } from '@app/platform/PlatformContext';
+import { webPlatform } from '@web/platform';
 
 const queryClient = new QueryClient({
   defaultOptions: {

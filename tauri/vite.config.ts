@@ -8,6 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '../app/src'),
+      '@app': path.resolve(__dirname, '../app/src'),
+      '@tauri': path.resolve(__dirname, './src'),
       react: path.resolve(__dirname, '../app/node_modules/react'),
       'react-dom': path.resolve(__dirname, '../app/node_modules/react-dom'),
       '@tanstack/react-query': path.resolve(__dirname, '../app/node_modules/@tanstack/react-query'),

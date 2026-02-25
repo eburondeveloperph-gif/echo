@@ -1,5 +1,5 @@
 import { invoke } from '@tauri-apps/api/core';
-import type { PlatformAudio, AudioDevice } from '@/platform/types';
+import type { PlatformAudio, AudioDevice } from '@app/platform/types';
 
 export const tauriAudio: PlatformAudio = {
   isSystemAudioSupported(): boolean {

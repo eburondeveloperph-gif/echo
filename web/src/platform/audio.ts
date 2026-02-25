@@ -1,4 +1,4 @@
-import type { PlatformAudio, AudioDevice } from '@/platform/types';
+import type { PlatformAudio, AudioDevice } from '@app/platform/types';
 
 export const webAudio: PlatformAudio = {
   isSystemAudioSupported(): boolean {

@@ -1,6 +1,6 @@
 import { invoke } from '@tauri-apps/api/core';
 import { listen, emit } from '@tauri-apps/api/event';
-import type { PlatformLifecycle } from '@/platform/types';
+import type { PlatformLifecycle } from '@app/platform/types';
 
 class TauriLifecycle implements PlatformLifecycle {
   onServerReady?: () => void;
@@ -40,12 +40,13 @@ class TauriLifecycle implements PlatformLifecycle {
       // Listen for window close request from Rust
       await listen<null>('window-close-requested', async () => {
         // Import store here to avoid circular dependency
-        const { useServerStore } = await import('@/stores/serverStore');
+        const { useServerStore } = await import('@app/stores/serverStore');
         const keepRunning = useServerStore.getState().keepServerRunningOnClose;
 
         // Check if server was started by this app instance
         // @ts-expect-error - accessing module-level variable from another module
-        const serverStartedByApp = window.__voiceboxServerStartedByApp ?? false;
+        const serverStartedByApp =
+          window.__eburonEchoServerStartedByApp ?? window.__voiceboxServerStartedByApp ?? false;
 
         if (!keepRunning && serverStartedByApp) {
           // Stop server before closing (only if we started it)

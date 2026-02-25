@@ -18,7 +18,9 @@
     "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["../app/src/*"]
+      "@/*": ["../app/src/*"],
+      "@app/*": ["../app/src/*"],
+      "@tauri/*": ["./src/*"]
     }
   },
   "include": ["src"],

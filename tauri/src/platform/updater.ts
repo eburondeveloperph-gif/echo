@@ -1,6 +1,6 @@
 import { relaunch } from '@tauri-apps/plugin-process';
 import { check, type Update } from '@tauri-apps/plugin-updater';
-import type { PlatformUpdater, UpdateStatus } from '@/platform/types';
+import type { PlatformUpdater, UpdateStatus } from '@app/platform/types';
 
 // Check if we're on Windows (NSIS installer handles restart automatically)
 const isWindows = () => {

@@ -1,4 +1,4 @@
-import type { PlatformMetadata } from '@/platform/types';
+import type { PlatformMetadata } from '@app/platform/types';
 
 export const webMetadata: PlatformMetadata = {
   async getVersion(): Promise<string> {

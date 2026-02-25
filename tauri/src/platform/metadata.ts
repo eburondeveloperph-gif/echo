@@ -1,5 +1,5 @@
 import { getVersion } from '@tauri-apps/api/app';
-import type { PlatformMetadata } from '@/platform/types';
+import type { PlatformMetadata } from '@app/platform/types';
 
 export const tauriMetadata: PlatformMetadata = {
   async getVersion(): Promise<string> {

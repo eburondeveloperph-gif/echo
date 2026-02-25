@@ -1,4 +1,4 @@
-import type { PlatformUpdater, UpdateStatus } from '@/platform/types';
+import type { PlatformUpdater, UpdateStatus } from '@app/platform/types';
 
 class WebUpdater implements PlatformUpdater {
   private status: UpdateStatus = {
