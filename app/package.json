@@ -1,5 +1,5 @@
 {
-  "name": "@voicebox/app",
+  "name": "@eburon-echo/app",
   "version": "0.1.13",
   "private": true,
   "type": "module",

@@ -1,5 +1,5 @@
 {
-  "name": "@voicebox/tauri",
+  "name": "@eburon-echo/tauri",
   "private": true,
   "version": "0.1.13",
   "type": "module",

@@ -1,5 +1,5 @@
 """
-Configuration module for voicebox backend.
+Configuration module for eburon-echo backend.
 
 Handles data directory configuration for production bundling.
 """
@@ -8,9 +8,12 @@ import os
 from pathlib import Path
 
 # Allow users to override the HuggingFace model download directory.
-# Set VOICEBOX_MODELS_DIR to an absolute path before starting the server.
+# Set EBURON_ECHO_MODELS_DIR to an absolute path before starting the server.
+# VOICEBOX_MODELS_DIR is still supported for backward compatibility.
 # This sets HF_HUB_CACHE so all huggingface_hub downloads go to that path.
-_custom_models_dir = os.environ.get("VOICEBOX_MODELS_DIR")
+_custom_models_dir = os.environ.get("EBURON_ECHO_MODELS_DIR") or os.environ.get(
+    "VOICEBOX_MODELS_DIR"
+)
 if _custom_models_dir:
     os.environ["HF_HUB_CACHE"] = _custom_models_dir
     print(f"[config] Model download path set to: {_custom_models_dir}")
@@ -41,7 +44,11 @@ def get_data_dir() -> Path:
 
 def get_db_path() -> Path:
     """Get database file path."""
-    return _data_dir / "voicebox.db"
+    db_path = _data_dir / "eburon-echo.db"
+    legacy_db_path = _data_dir / "voicebox.db"
+    if not db_path.exists() and legacy_db_path.exists():
+        return legacy_db_path
+    return db_path
 
 def get_profiles_dir() -> Path:
     """Get profiles directory path."""

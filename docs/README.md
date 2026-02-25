@@ -1,6 +1,6 @@
-# Voicebox Documentation
+# Eburon Echo Documentation
 
-This directory contains the documentation for Voicebox, built with [Mintlify](https://mintlify.com).
+This directory contains the documentation for Eburon Echo, built with [Mintlify](https://mintlify.com).
 
 ## Development
 

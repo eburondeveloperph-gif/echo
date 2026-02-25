@@ -1,0 +1,151 @@
+# Hindi Lexicon for Eburon Echo
+# This file contains common Hindi words and their phonetic pronunciations
+# Format: हिंदी_शब्द phonetic_pronunciation (using Devanagari script and IPA)
+
+# Common greetings and expressions
+नमस्ते nə.məs.teː
+नमस्कार nə.məs.kaːr
+धन्यवाद d̪ʱəɲ.ʋaː.d̪
+शुक्रिया ʃuk.ri.jaː
+माफ़ कीजिये maː.f kiː.d͡ʒije
+हाँ hãː
+नहीं nə.ɦĩː
+
+# Common words
+मैं mə̃ː
+तुम tum
+वह vəh
+यह yəh
+क्या kjaː
+कब kab
+कहाँ kʰãː
+कैसे kəise
+क्यों kjõ
+
+# Numbers
+एक ek
+दो doː
+तीन tiːn
+चार tʃaːr
+पाँच pãːtʃ
+छे tʃʰeː
+सात saːt̪
+आठ aːʈʰ
+नौ nauː
+दस d̪əs
+
+# Family terms
+पिता pi.t̪aː
+माता maː.t̪aː
+भाई bʰaːiː
+बहन bə.ɦən
+बेटा beː.ʈaː
+बेटी beː.ʈiː
+दादा daː.daː
+दादी daː.diː
+
+# Common objects
+घर ɡʰər
+दरवाज़ d̪ə.rə.ʋaːz
+खिड़की kʰi.ɽ.kiː
+किताब ki.taːb
+कलम kə.ləm
+मेज़ meːz
+कुरसी ku.rsiː
+
+# Food and drinks
+पानी paː.niː
+रोटी ro.ʈiː
+चावल tʃaː.ʋəl
+दाल d̪aːl
+चाय tʃaːj
+दूध duːd̪
+फल pʰəl
+सब्ज़ी səb.ziː
+
+# Time and weather
+दिन din
+रात raːt
+सुबह sʊ.bəh
+शाम ʃaːm
+सूरज suː.rədʒ
+चाँद tʃãːd̪
+बारिश baː.riʃ
+गर्मी gər.miː
+
+# Common verbs
+है hə̃ː
+था tʰaː
+होगा ho.ɡaː
+जाना dʒaː.naː
+आना aː.naː
+देखना deː.kʰə.naː
+खाना kʰaː.naː
+पीना piː.naː
+करना kə.rə.naː
+
+# Question words
+क्या kjaː
+कौन kauːn
+कब kab
+कहाँ kʰãː
+कैसे kəise
+क्यों kjõ
+कितना ki.t̪.naː
+
+# Prepositions and postpositions
+मे̃ mẽ
+पर pər
+से seː
+तक tək
+के पास keː paːs
+के लिए keː li.e
+के बिना keː bi.naː
+
+# Common adjectives
+अच्छə ac.tʃʰəː
+बुरा bu.raː
+बड़ा bə.ɽaː
+छोटा tʃʰoː.ʈaː
+सुन्दर sʊn.d̪ər
+मज़ेदार mə.zeː.daːr
+सरल sə.rəl
+कठिन kə.ʈʰiːn
+नया nə.jaː
+पुराना pu.raː.naː
+
+# Colors
+लाल laːl
+नीला niː.laː
+हरा haraː
+पीला piː.laː
+काला kaː.laː
+सफ़ेद sə.fed
+गुलाबी gu.laː.biː
+नारंगी naː.raŋ.ɡiː
+
+# Days of the week
+सोमवार soʋ.vaːr
+मंगलवार məŋ.ɡəl.ʋaːr
+बुधवार bʊd̪ʱ.ʋaːr
+गुरुवार ɡu.ru.ʋaːr
+शुक्रवार ʃuk.rə.ʋaːr
+शनिवार ʃə.ni.ʋaːr
+रविवार rə.ʋi.ʋaːr
+
+# Common places
+घर ɡʰər
+स्कूल skuːl
+बाज़ार baː.zaːr
+दुकान du.kaːn
+मंदिर mən.d̪iːr
+अस्पताल əs.pə.taːl
+स्टेशन sʈeː.ʃən
+पार्क paːrk
+
+# Common phrases
+मैं ठीक हूँ mə̃ː ʈiːk hũː
+आप कैसे हैं aːp kəise hẽː
+मुझे माफ़ करें mu.d͡ʒʱe maːf kə.rẽː
+मैं नहीं जानता mə̃ː nə.ɦĩː d͡ʒaː.nə.t̪aː
+कृपया कीजिए kri.pə.jaː kiː.d͡ʒije

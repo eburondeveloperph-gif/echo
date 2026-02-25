@@ -1,0 +1,127 @@
+# Arabic Lexicon for Eburon Echo
+# This file contains common Arabic words and their phonetic pronunciations
+# Format: arabic_word phonetic_pronunciation (using Arabic script and IPA)
+
+# Common greetings and expressions
+السلام عليكم ʔas.saˈlaː.mu ʕa.laj.kum
+مرحبا marˈħa.baː
+شكراʾن ʃukˈraː.ʔan
+معذرة maˈʕ.ði.rah
+نعم naʕam
+لا laː
+
+# Common words
+من man
+إلى ʔi.laː
+في fi
+على ʕa.laː
+مع maʕ
+هذا haː.ðaː
+تلك til.ka
+هؤلاءʔu.ʔu.ʔlaːʔ
+
+# Numbers
+واحد waː.hid
+اثنان ʔit.naːn
+ثalaː.θaː
+ʔar.baʕa
+خamsa xam.saː
+sitta sit.tah
+sabʕa sabʕa
+θamaː.niːa
+tisʕa tisʕa
+ʕaʃara ʕa.ʃa.rah
+
+# Family terms
+أب ʔab
+أم ʔum
+أخ ʔax
+أخت ʔux.t
+ابن ʔib.n
+ابنة ʔib.nah
+جد dʒad
+جدة dʒad.dah
+
+# Common objects
+بيut bay.t
+باب baːb
+نافذة naː.fi.ðah
+كتاب ki.taːb
+قلم qa.lam
+طاولة ṭaː.wi.lah
+كرسي kur.siː
+
+# Food and drinks
+ماء maːʔ
+خبz xubz
+رز ruzz
+شاي ʃaːj
+قهوة qah.wah
+لحم laḥm
+سمak samak
+
+# Time and weather
+يوم jawm
+ليلة laj.lah
+صباح ṣa.bāḥ
+مساءʔum.saːʔ
+شمس šams
+قamar qamar
+مطر ma.ṭar
+حر ḥar.r
+
+# Common verbs
+كان kaː.na
+يكون ja.kuːn
+ذهven ða.ha.ba
+جاء dʒaːʔ
+رأى raʔaː
+قال qaː.la
+فعل faʕa.la
+يعمل jaʕa.mal
+
+# Question words
+ما maː
+من man
+مىna maː.dhaː
+متى maː.taː
+كيف ka.jf
+لماðaː li.maː.ðaː
+أين ʔaj.na
+
+# Prepositions
+من man
+إلى ʔi.laː
+في fi
+على ʕa.laː
+تحت taḥ.t
+فوق faw.q
+بين baj.na
+
+# Common adjectives
+كbiːr ka.biːr
+ṣaģiːr ṣa.ģiːr
+dʒamiːl dʒa.miːl
+qawiː qawiː
+ḥasan ḥa.san
+sahl sa.hil
+saʕb saʕb
+ʔaswad ʔas.wad
+ʔaḥmar ʔaḥ.mar
+
+# Religious terms (common in Arabic)
+الله al.laːh
+إسلام ʔis.laːm
+قرآن qur.ʔaːn
+صلاat ṣa.laːh
+صوم ṣawm
+حajj ḥaj.dʒ
+
+# Days of the week
+الإثنين al.ʔit.niːn
+الثلاثاء al.θu.laː.θaːʔ
+الأربعاء al.ʔar.biʕaːʔ
+الخميس al.xa.miːs
+الجمعة al.dʒumʕah
+السبت as.sabt
+الأحد al.ʔa.ḥad

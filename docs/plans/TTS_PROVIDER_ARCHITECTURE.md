@@ -27,7 +27,7 @@ This architecture solves:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Voicebox App (Tauri + Backend)           ~150MB        │
+│  Eburon Echo App (Tauri + Backend)           ~150MB        │
 │  ├─ UI Layer (React)                                    │
 │  ├─ Backend (FastAPI)                                   │
 │  │  ├─ Voice Profiles                                   │
@@ -89,7 +89,7 @@ This architecture solves:
 
 ### Component Breakdown
 
-#### 1. Main App (voicebox.exe / .app / .AppImage)
+#### 1. Main App (eburon-echo.exe / .app / .AppImage)
 
 **Size:** ~100-150MB
 
@@ -445,7 +445,7 @@ class ProviderInstaller:
             "mlx": "tts-provider-mlx"
         }[provider_type]
 
-        download_url = f"https://downloads.voicebox.sh/providers/v{PROVIDER_VERSION}/{binary_name}"
+        download_url = f"https://downloads.eburon-echo.sh/providers/v{PROVIDER_VERSION}/{binary_name}"
 
         # Download with progress tracking (reuse existing SSE system)
         await download_with_progress(
@@ -457,9 +457,9 @@ class ProviderInstaller:
 
 **Provider Storage Location:**
 
-- Windows: `%APPDATA%/voicebox/providers/`
-- macOS: `~/Library/Application Support/voicebox/providers/`
-- Linux: `~/.local/share/voicebox/providers/`
+- Windows: `%APPDATA%/eburon-echo/providers/`
+- macOS: `~/Library/Application Support/eburon-echo/providers/`
+- Linux: `~/.local/share/eburon-echo/providers/`
 
 ---
 
@@ -482,7 +482,7 @@ export function ProviderSettings() {
 		<Card>
 			<CardHeader>
 				<CardTitle>TTS Provider</CardTitle>
-				<CardDescription>Choose how Voicebox generates speech</CardDescription>
+				<CardDescription>Choose how Eburon Echo generates speech</CardDescription>
 			</CardHeader>
 			<CardContent>
 				<RadioGroup
@@ -606,7 +606,7 @@ export function ProviderSettings() {
 ## File Structure
 
 ```
-voicebox/
+eburon-echo/
 ├── backend/
 │   ├── main.py                    # Main FastAPI app (no TTS code)
 │   ├── providers/
@@ -692,7 +692,7 @@ voicebox/
 1. Exclude PyTorch/Qwen3-TTS from main app PyInstaller spec
 2. Main app now requires provider download
 3. Update GitHub CI to build multiple artifacts:
-   - `voicebox-{version}-{platform}.exe` (~150MB)
+   - `eburon-echo-{version}-{platform}.exe` (~150MB)
    - `tts-provider-pytorch-cpu-{version}.exe`
    - `tts-provider-pytorch-cuda-{version}.exe`
    - `tts-provider-mlx-{version}` (macOS)
@@ -769,7 +769,7 @@ async def check_provider_compatibility(provider_version: str) -> bool:
 
 ### First-Time Setup
 
-1. User downloads and installs Voicebox (~150MB)
+1. User downloads and installs Eburon Echo (~150MB)
 2. App launches → detects no TTS provider installed
 3. Shows setup wizard:
 
@@ -805,7 +805,7 @@ async def check_provider_compatibility(provider_version: str) -> bool:
 
 **Scenario:** Bug fix in UI, no backend changes
 
-1. User gets update notification: "Voicebox v0.2.1 available"
+1. User gets update notification: "Eburon Echo v0.2.1 available"
 2. Downloads update (~150MB, not 2.4GB!)
 3. Installs and restarts
 4. **Provider stays the same** (no re-download needed)
@@ -954,11 +954,11 @@ async def check_provider_compatibility(provider_version: str) -> bool:
 If you want to build a custom TTS provider:
 
 1. Implement the provider API spec (see above)
-2. Test with Voicebox locally
+2. Test with Eburon Echo locally
 3. Package as executable (PyInstaller, Docker, etc.)
 4. Share in GitHub Discussions
 
 **Questions?**
 
-- GitHub Issues: [voicebox/issues](https://github.com/jamiepine/voicebox/issues)
+- GitHub Issues: [eburon-echo/issues](https://github.com/jamiepine/eburon-echo/issues)
 - Discord: Coming soon

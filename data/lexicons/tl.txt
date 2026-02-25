@@ -1,0 +1,92 @@
+# Tagalog (Filipino) Lexicon for Eburon Echo
+# This file contains common Tagalog words and their phonetic pronunciations
+# Format: word phonetic_pronunciation
+
+# Common greetings and expressions
+kumusta kuˈmus.ta
+paalam paˈʔa.lam
+salamat saˈla.mat
+opo ˈʔo.po
+po po
+
+# Common words
+bakit baˈkit
+saan saˈʔan
+kailan kaˈʔi.lan
+paano paˈʔa.no
+sino siˈno
+
+# Numbers
+isa ˈi.sa
+dalawa daˈla.wa
+tatlo ˈtat.lo
+apat ʔaˈpat
+lima ˈli.ma
+anim ʔa.nim
+pito ˈpi.to
+walo ˈwa.lo
+siyam ˈsi.yam
+sampu ˈsam.pu
+
+# Family terms
+nanay naˈnaj
+tatay taˈtaj
+kuya ˈku.ya
+ate ˈʔa.te
+tito ˈti.to
+tita ˈti.ta
+
+# Common objects
+bahay baˈhaj
+mesa meˈsa
+silya ˈsil.ya
+libro ˈlib.ro
+papel paˈpel
+
+# Food and drinks
+bigas biˈgas
+kanin kaˈnin
+tubig tuˈbig
+kape kaˈpe
+gatas gaˈtas
+
+# Time and weather
+umaga uˈma.ga
+hapon haˈpon
+gabi gaˈbi
+araw ʔaˈraw
+ulan ˈu.lan
+init ˈʔi.nit
+
+# Common verbs
+kumain kuˈma.ʔin
+matulog maˈtu.log
+magbasa magˈba.sa
+magsulat magˈsu.lat
+pumunta puˈmun.ta
+
+# Question words
+ano ˈʔa.no
+sino siˈno
+kanino kaˈni.no
+alin ʔaˈlin
+bakit baˈkit
+
+# Demonstratives
+ito ˈʔi.to
+iyan ˈʔi.yan
+iyun ˈʔi.yun
+
+# Conjunctions
+at at
+pero peˈro
+dahil daˈhil
+kung kʰuŋ
+
+# Common adjectives
+maganda maˈgan.da
+pangit paˈŋit
+maliit maˈli.ʔit
+malaki maˈla.ki
+matanda maˈtan.da
+bata ˈba.ta

@@ -1,0 +1,190 @@
+# Japanese Lexicon for Eburon Echo
+# This file contains common Japanese words and their phonetic pronunciations
+# Format: 日本語 phonetic_pronunciation (using Kanji/Kana and Romaji/IPA)
+
+# Common greetings and expressions
+こんにちは kon.ni.ti.wa
+おはようございます o.ha.yoː.go.za.i.ma.su
+こんばんは kon.ban.wa
+さようなら sa.yoː.na.ra
+ありがとう a.ri.ga.toː
+すみません su.mi.ma.sen
+はい ha.i
+いいえ i.i.e
+
+# Common words
+私 wa.ta.si
+貴方 a.na.ta
+彼 ka.re
+彼女 ka.no.d͡ʑo
+これ ko.re
+それ so.re
+あれ a.re
+ここ ko.ko
+そこ so.ko
+あそこ a.so.ko
+
+# Numbers
+一 i.ti
+二 ni
+三 san
+四 ɕi
+五 go
+六 ro.ku
+七 nana
+八 ha.ti
+九 kyuː
+十 d͡ʑuː
+
+# Family terms
+父 ti.ti.ti.ti
+母 ha.ha
+兄 a.ni
+姉 a.ne
+弟 o.toː.to
+妹 i.moː.to
+祖父 so.fu
+祖母 so.bo
+
+# Common objects
+家 i.e
+戸 he
+窓 ma.do
+本 ho.n
+鉛筆 e.n.pi.tsu
+机 tsu.ku.e
+椅子 i.su
+
+# Food and drinks
+水 mi.zu
+パン pan
+ご飯 go.han
+肉 ni.ku
+魚 sa.ka.na
+茶 o.tʲa
+コーヒー koː.hiː
+牛乳 gyuː.nyuː
+
+# Time and weather
+日 hi
+夜 yo.ru
+朝 a.sa
+夕 yuː
+太陽 ta.i.yoː
+月 tsu.ki
+雨 a.me
+雪 yu.ki
+
+# Common verbs
+です de.su
+です de.sita
+でしょː de.syoː
+行く i.ku
+来る ku.ru
+見る mi.ru
+食べる ta.be.ru
+飲む no.mu
+する su.ru
+
+# Question words
+何 na.ni
+誰 da.re
+いつ i.tsu
+どこ do.ko
+どのように do.no.yoː.ni
+なぜ na.ze
+どれ do.re
+いくつ i.ku.tsu
+
+# Particles (essential for Japanese grammar)
+は wa
+が ɡa
+を o
+に ni
+へ e
+で de
+と to
+も mo
+の no
+から ka.ra
+まで ma.de
+
+# Common adjectives
+良い jo.i
+悪い wa.ru.i
+大きい oː.ki.i
+小さい ti.i.sa.i
+美しい u.tsu.ku.ɕi.i
+優しい ja.sa.ɕi.i
+難しい mu.zu.ka.ɕi.i
+易しい ja.sa.ɕi.i
+新しい a.ta.ra.ɕi.i
+古い fu.ru.i
+
+# Days of the week
+月曜日 ge.tsu.yoː.bi
+火曜日 ka.yoː.bi
+水曜日 su.i.yoː.bi
+木曜日 mo.ku.yoː.bi
+金曜日 kin.yoː.bi
+土曜日 do.yoː.bi
+日曜日 ni.ti.yoː.bi
+
+# Common places
+学校 gak.koː
+会社 ka.i.ɕa
+店 mi.se
+病院 bjoː.in
+郵便局 yuː.bin.kjo.ku
+図書館 to.ɕo.ka.n
+駅 e.ki
+公園 koː.en
+
+# Common phrases
+お元気ですか o.gen.ki.de.su.ka
+元気です gen.ki.de.su
+お願いします o.ne.ga.i.ɕi.ma.su
+了解 rjoː.kai
+頑張ってください gan.bat.te.ku.da.sa.i
+お疲れ様でした o.tsu.ka.re.sa.ma.de.ɕi.ta
+はじめまて ha.d͡ʒi.me.ma.ɕi.te
+よろしくお願いします yo.ro.ɕi.ku o.ne.ga.i.ɕi.ma.su
+
+# Colors
+赤 a.ka
+青 ao
+白 ɕi.ro
+黒 ku.ro
+黄 ki
+緑 mi.do.ri
+茶色 t͡ɕa.i.ro
+紫 mu.ra.sa.ki
+
+# Numbers (extended)
+百 hja.ku
+千 sen
+万 man
+億 o.ku
+兆 tʃoː
+
+# Time expressions
+一時 i.ti.d͡ʒi
+二時 ni.d͡ʒi
+三分 san.pun
+四分 ɕi.pun
+五時 go.d͡ʒi
+六時 ro.ku.d͡ʒi
+七時 ɕi.ti.d͡ʒi
+八時 ha.ti.d͡ʒi
+九時 kyuː.d͡ʒi
+十時 d͡ʑuː.d͡ʒi
+
+# Common verbs (conjugated forms)
+食べます ta.be.ma.su
+飲みます no.mi.ma.su
+行きます i.ki.ma.su
+来ます ki.ma.su
+見ます mi.ma.su
+します ɕi.ma.su
+あります a.ri.ma.su
+います i.ma.su

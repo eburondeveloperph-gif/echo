@@ -14,6 +14,7 @@ from ..utils.audio import normalize_audio, load_audio
 from ..utils.progress import get_progress_manager
 from ..utils.hf_progress import HFProgressTracker, create_hf_progress_callback
 from ..utils.tasks import get_task_manager
+from ..utils.lexicon import enhance_text_with_lexicon
 
 
 class PyTorchTTSBackend:
@@ -337,7 +338,7 @@ class PyTorchTTSBackend:
         Args:
             text: Text to synthesize
             voice_prompt: Voice prompt dictionary from create_voice_prompt
-            language: Language code (en or zh)
+            language: Language code (en, zh, tl, nl, nl_be, etc.)
             seed: Random seed for reproducibility
             instruct: Natural language instruction for speech delivery control
 
@@ -346,6 +347,9 @@ class PyTorchTTSBackend:
         """
         # Load model
         await self.load_model_async(None)
+
+        # Enhance text with lexicon for better pronunciation
+        enhanced_text = enhance_text_with_lexicon(text, language)
 
         def _generate_sync():
             """Run synchronous generation in thread pool."""
@@ -357,7 +361,7 @@ class PyTorchTTSBackend:
 
             # Generate audio - this is the blocking operation
             wavs, sample_rate = self.model.generate_voice_clone(
-                text=text,
+                text=enhanced_text,
                 voice_clone_prompt=voice_prompt,
                 instruct=instruct,
             )

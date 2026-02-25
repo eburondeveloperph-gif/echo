@@ -27,8 +27,8 @@ fn main() {
     #[cfg(target_os = "macos")]
     {
         let project_root = env!("CARGO_MANIFEST_DIR");
-        // voicebox.icon is in tauri/assets/voicebox.icon (one level up from src-tauri)
-        let icon_source = format!("{}/../assets/voicebox.icon", project_root);
+        // eburon-echo.icon is in tauri/assets/eburon-echo.icon (one level up from src-tauri)
+        let icon_source = format!("{}/../assets/eburon-echo.icon", project_root);
         let gen_dir = format!("{}/gen", project_root);
 
         std::fs::create_dir_all(&gen_dir).expect("Failed to create gen directory");
@@ -49,7 +49,7 @@ fn main() {
                     "--output-partial-info-plist",
                     &partial_plist,
                     "--app-icon",
-                    "voicebox",
+                    "eburon-echo",
                     "--include-all-app-icons",
                     "--target-device",
                     "mac",

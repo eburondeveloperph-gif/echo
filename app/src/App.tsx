@@ -1,6 +1,6 @@
 import { RouterProvider } from '@tanstack/react-router';
 import { useEffect, useRef, useState } from 'react';
-import voiceboxLogo from '@/assets/voicebox-logo.png';
+import eburonAiLogo from '@/assets/eburon-ai-logo.svg';
 import ShinyText from '@/components/ShinyText';
 import { TitleBarDragRegion } from '@/components/TitleBarDragRegion';
 import { useAutoUpdater } from '@/hooks/useAutoUpdater';
@@ -30,7 +30,7 @@ const LOADING_MESSAGES = [
   'Activating speech synthesis...',
   'Fine-tuning acoustic models...',
   'Preparing voice cloning matrices...',
-  'Initializing Qwen TTS framework...',
+  'Initializing Echo TTS framework...',
 ];
 
 function App() {
@@ -83,6 +83,7 @@ function App() {
       setServerReady(true); // Mark as ready so UI doesn't show loading screen
       // Mark that server was not started by app (so we don't try to stop it on close)
       // @ts-expect-error - adding property to window
+      window.__eburonEchoServerStartedByApp = false;
       window.__voiceboxServerStartedByApp = false;
       return;
     }
@@ -104,12 +105,14 @@ function App() {
         setServerReady(true);
         // Mark that we started the server (so we know to stop it on close)
         // @ts-expect-error - adding property to window
+        window.__eburonEchoServerStartedByApp = true;
         window.__voiceboxServerStartedByApp = true;
       })
       .catch((error) => {
         console.error('Failed to auto-start server:', error);
         serverStartingRef.current = false;
         // @ts-expect-error - adding property to window
+        window.__eburonEchoServerStartedByApp = false;
         window.__voiceboxServerStartedByApp = false;
       });
 
@@ -152,8 +155,8 @@ function App() {
               <div className="w-48 h-48 rounded-full bg-accent/20 blur-3xl" />
             </div>
             <img
-              src={voiceboxLogo}
-              alt="Voicebox"
+              src={eburonAiLogo}
+              alt="Eburon AI"
               className="w-48 h-48 object-contain animate-fade-in-scale relative z-10"
             />
           </div>

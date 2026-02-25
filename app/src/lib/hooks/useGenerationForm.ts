@@ -5,6 +5,7 @@ import * as z from 'zod';
 import { useToast } from '@/components/ui/use-toast';
 import { apiClient } from '@/lib/api/client';
 import { LANGUAGE_CODES, type LanguageCode } from '@/lib/constants/languages';
+import { MODEL_DISPLAY_NAMES } from '@/lib/constants/modelAliases';
 import { useGeneration } from '@/lib/hooks/useGeneration';
 import { useModelDownloadToast } from '@/lib/hooks/useModelDownloadToast';
 import { useGenerationStore } from '@/stores/generationStore';
@@ -68,7 +69,7 @@ export function useGenerationForm(options: UseGenerationFormOptions = {}) {
       setIsGenerating(true);
 
       const modelName = `qwen-tts-${data.modelSize}`;
-      const displayName = data.modelSize === '1.7B' ? 'Qwen TTS 1.7B' : 'Qwen TTS 0.6B';
+      const displayName = MODEL_DISPLAY_NAMES[modelName] || modelName;
 
       try {
         const modelStatus = await apiClient.getModelStatus();

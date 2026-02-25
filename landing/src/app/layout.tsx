@@ -8,22 +8,23 @@ import { Header } from '@/components/Header';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Voicebox - Open Source Voice Cloning Desktop App Powered by Qwen3-TTS',
+  title: 'Eburon Echo - Open Source Voice Cloning Desktop App Powered by Echo',
   description:
-    'Near-perfect voice cloning powered by Qwen3-TTS. Desktop app for Mac, Windows, and Linux. Multi-sample support, smart caching, local or remote inference.',
+    'Near-perfect voice cloning powered by Echo (Qwen3-TTS). Desktop app for Mac, Windows, and Linux. Multi-sample support, smart caching, local or remote inference.',
   keywords: ['voice cloning', 'TTS', 'Qwen3', 'desktop app', 'AI voice'],
   icons: {
     icon: [
+      { url: '/eburon-ai-logo.svg', type: 'image/svg+xml' },
       { url: '/favicon.png', type: 'image/png' },
       { url: '/favicon.ico', sizes: 'any' },
     ],
     apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
-    title: 'voicebox',
-    description: 'Professional voice cloning with Qwen3-TTS',
+    title: 'eburon-echo',
+    description: 'Professional voice cloning with Echo (Qwen3-TTS)',
     type: 'website',
-    url: 'https://voicebox.sh',
+    url: 'https://eburon-echo.sh',
   },
 };
 

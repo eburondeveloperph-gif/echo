@@ -13,11 +13,16 @@ from pathlib import Path
 def migrate():
     """Add instruct column to generations table if it doesn't exist."""
     # Get data directory
-    data_dir = os.environ.get("VOICEBOX_DATA_DIR")
+    data_dir = os.environ.get("EBURON_ECHO_DATA_DIR") or os.environ.get("VOICEBOX_DATA_DIR")
     if data_dir:
-        db_path = Path(data_dir) / "voicebox.db"
+        data_path = Path(data_dir)
     else:
-        db_path = Path.cwd() / "data" / "voicebox.db"
+        data_path = Path.cwd() / "data"
+
+    db_path = data_path / "eburon-echo.db"
+    legacy_db_path = data_path / "voicebox.db"
+    if not db_path.exists() and legacy_db_path.exists():
+        db_path = legacy_db_path
 
     if not db_path.exists():
         print(f"Database not found at {db_path}, skipping migration")

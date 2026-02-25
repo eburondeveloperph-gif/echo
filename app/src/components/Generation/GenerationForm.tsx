@@ -20,6 +20,7 @@ import {
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { LANGUAGE_OPTIONS } from '@/lib/constants/languages';
+import { TTS_MODEL_ALIAS } from '@/lib/constants/modelAliases';
 import { useGenerationForm } from '@/lib/hooks/useGenerationForm';
 import { useProfile } from '@/lib/hooks/useProfiles';
 import { useUIStore } from '@/stores/uiStore';
@@ -137,8 +138,10 @@ export function GenerationForm() {
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="1.7B">Qwen TTS 1.7B (Higher Quality)</SelectItem>
-                        <SelectItem value="0.6B">Qwen TTS 0.6B (Faster)</SelectItem>
+                        <SelectItem value="1.7B">
+                          {`${TTS_MODEL_ALIAS} 1.7B (Higher Quality)`}
+                        </SelectItem>
+                        <SelectItem value="0.6B">{`${TTS_MODEL_ALIAS} 0.6B (Faster)`}</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormDescription>Larger models produce better quality</FormDescription>

@@ -29,7 +29,7 @@ async fn start_server(
         return Ok(format!("http://127.0.0.1:{}", SERVER_PORT));
     }
 
-    // Check if a voicebox server is already running on our port (from previous session with keep_running=true)
+    // Check if a eburon-echo server is already running on our port (from previous session with keep_running=true)
     #[cfg(unix)]
     {
         use std::process::Command;
@@ -43,9 +43,9 @@ async fn start_server(
                 if parts.len() >= 2 {
                     let command = parts[0];
                     let pid_str = parts[1];
-                    if command.contains("voicebox") {
+                    if command.contains("eburon-echo") {
                         if let Ok(pid) = pid_str.parse::<u32>() {
-                            println!("Found existing voicebox-server on port {} (PID: {}), reusing it", SERVER_PORT, pid);
+                            println!("Found existing eburon-echo-server on port {} (PID: {}), reusing it", SERVER_PORT, pid);
                             // Store the PID so we can kill it on exit if needed
                             *state.server_pid.lock().unwrap() = Some(pid);
                             return Ok(format!("http://127.0.0.1:{}", SERVER_PORT));
@@ -73,8 +73,8 @@ async fn start_server(
                                 .output()
                             {
                                 let tasklist_str = String::from_utf8_lossy(&tasklist_output.stdout);
-                                if tasklist_str.to_lowercase().contains("voicebox") {
-                                    println!("Found existing voicebox-server on port {} (PID: {}), reusing it", SERVER_PORT, pid);
+                                if tasklist_str.to_lowercase().contains("eburon-echo") {
+                                    println!("Found existing eburon-echo-server on port {} (PID: {}), reusing it", SERVER_PORT, pid);
                                     // Store the PID so we can kill it on exit if needed
                                     *state.server_pid.lock().unwrap() = Some(pid);
                                     return Ok(format!("http://127.0.0.1:{}", SERVER_PORT));
@@ -87,7 +87,7 @@ async fn start_server(
         }
     }
 
-    // Kill any orphaned voicebox-server from previous session on legacy port 8000
+    // Kill any orphaned eburon-echo-server from previous session on legacy port 8000
     // This handles upgrades from older versions that used a fixed port
     #[cfg(unix)]
     {
@@ -105,10 +105,10 @@ async fn start_server(
                     let command = parts[0];
                     let pid_str = parts[1];
                     
-                    // Only kill if it's a voicebox-server process
-                    if command.contains("voicebox") {
+                    // Only kill if it's a eburon-echo-server process
+                    if command.contains("eburon-echo") {
                         if let Ok(pid) = pid_str.parse::<i32>() {
-                            println!("Found orphaned voicebox-server on legacy port {} (PID: {}, CMD: {}), killing it...", LEGACY_PORT, pid, command);
+                            println!("Found orphaned eburon-echo-server on legacy port {} (PID: {}, CMD: {}), killing it...", LEGACY_PORT, pid, command);
                             // Kill the process group
                             let _ = Command::new("kill")
                                 .args(["-9", "--", &format!("-{}", pid)])
@@ -118,7 +118,7 @@ async fn start_server(
                                 .output();
                         }
                     } else {
-                        println!("Legacy port {} is in use by non-voicebox process: {} (PID: {}), not killing", LEGACY_PORT, command, pid_str);
+                        println!("Legacy port {} is in use by non-eburon-echo process: {} (PID: {}), not killing", LEGACY_PORT, command, pid_str);
                     }
                 }
             }
@@ -144,13 +144,13 @@ async fn start_server(
                                 .output()
                             {
                                 let tasklist_str = String::from_utf8_lossy(&tasklist_output.stdout);
-                                if tasklist_str.to_lowercase().contains("voicebox") {
-                                    println!("Found orphaned voicebox-server on legacy port {} (PID: {}), killing it...", LEGACY_PORT, pid);
+                                if tasklist_str.to_lowercase().contains("eburon-echo") {
+                                    println!("Found orphaned eburon-echo-server on legacy port {} (PID: {}), killing it...", LEGACY_PORT, pid);
                                     let _ = Command::new("taskkill")
                                         .args(["/PID", &pid.to_string(), "/T", "/F"])
                                         .output();
                                 } else {
-                                    println!("Legacy port {} is in use by non-voicebox process (PID: {}), not killing", LEGACY_PORT, pid);
+                                    println!("Legacy port {} is in use by non-eburon-echo process (PID: {}), not killing", LEGACY_PORT, pid);
                                 }
                             }
                         }
@@ -174,11 +174,11 @@ async fn start_server(
         .map_err(|e| format!("Failed to create data dir: {}", e))?;
 
     println!("=================================================================");
-    println!("Starting voicebox-server sidecar");
+    println!("Starting eburon-echo-server sidecar");
     println!("Data directory: {:?}", data_dir);
     println!("Remote mode: {}", remote.unwrap_or(false));
 
-    let sidecar_result = app.shell().sidecar("voicebox-server");
+    let sidecar_result = app.shell().sidecar("eburon-echo-server");
 
     let mut sidecar = match sidecar_result {
         Ok(s) => s,
@@ -379,7 +379,7 @@ async fn start_server(
                 {
                     eprintln!("Server process ended unexpectedly during startup!");
                     eprintln!("The server binary may have crashed or exited with an error.");
-                    eprintln!("Check Console.app logs for more details (search for 'voicebox')");
+                    eprintln!("Check Console.app logs for more details (search for 'eburon-echo')");
                     return Err("Server process ended unexpectedly".to_string());
                 }
             }
@@ -527,7 +527,7 @@ async fn stop_server(state: State<'_, ServerState>) -> Result<(), String> {
                 println!("Process tree kill failed, killing by name...");
                 use std::process::Command;
                 let _ = Command::new("taskkill")
-                    .args(["/IM", "voicebox-server.exe", "/T", "/F"])
+                    .args(["/IM", "eburon-echo-server.exe", "/T", "/F"])
                     .output();
             }
 
@@ -792,7 +792,7 @@ pub fn run() {
                                     println!("Process tree kill failed, killing by name...");
                                     use std::process::Command;
                                     let _ = Command::new("taskkill")
-                                        .args(["/IM", "voicebox-server.exe", "/T", "/F"])
+                                        .args(["/IM", "eburon-echo-server.exe", "/T", "/F"])
                                         .output();
                                 }
 

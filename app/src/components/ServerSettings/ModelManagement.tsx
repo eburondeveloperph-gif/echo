@@ -16,6 +16,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/components/ui/use-toast';
 import { apiClient } from '@/lib/api/client';
+import { getAliasedModelDisplayName } from '@/lib/constants/modelAliases';
 import { useModelDownloadToast } from '@/lib/hooks/useModelDownloadToast';
 
 export function ModelManagement() {
@@ -70,7 +71,7 @@ export function ModelManagement() {
     
     // Find display name
     const model = modelStatus?.models.find((m) => m.model_name === modelName);
-    const displayName = model?.display_name || modelName;
+    const displayName = getAliasedModelDisplayName(modelName, model?.display_name || modelName);
     
     try {
       // IMPORTANT: Call the API FIRST before setting state
@@ -173,7 +174,10 @@ export function ModelManagement() {
                       onDelete={() => {
                         setModelToDelete({
                           name: model.model_name,
-                          displayName: model.display_name,
+                          displayName: getAliasedModelDisplayName(
+                            model.model_name,
+                            model.display_name,
+                          ),
                           sizeMb: model.size_mb,
                         });
                         setDeleteDialogOpen(true);
@@ -201,7 +205,10 @@ export function ModelManagement() {
                       onDelete={() => {
                         setModelToDelete({
                           name: model.model_name,
-                          displayName: model.display_name,
+                          displayName: getAliasedModelDisplayName(
+                            model.model_name,
+                            model.display_name,
+                          ),
                           sizeMb: model.size_mb,
                         });
                         setDeleteDialogOpen(true);
@@ -278,12 +285,13 @@ interface ModelItemProps {
 function ModelItem({ model, onDownload, onDelete, isDownloading, formatSize }: ModelItemProps) {
   // Use server's downloading state OR local state (for immediate feedback before server updates)
   const showDownloading = model.downloading || isDownloading;
+  const displayName = getAliasedModelDisplayName(model.model_name, model.display_name);
   
   return (
     <div className="flex items-center justify-between p-3 border rounded-lg">
       <div className="flex-1">
         <div className="flex items-center gap-2">
-          <span className="font-medium text-sm">{model.display_name}</span>
+          <span className="font-medium text-sm">{displayName}</span>
           {model.loaded && (
             <Badge variant="default" className="text-xs">
               Loaded

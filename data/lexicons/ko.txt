@@ -1,0 +1,203 @@
+# Korean Lexicon for Eburon Echo
+# This file contains common Korean words and their phonetic pronunciations
+# Format: 한국어 phonetic_pronunciation (using Hangul and Revised Romanization/IPA)
+
+# Common greetings and expressions
+안녕하세요 an.nʲʌŋ.ha.se.yo
+안녕히 가세요 an.nʲʌŋ.hi ka.se.yo
+안녕히 계세요 an.nʲʌŋ.hi kje.se.yo
+감사합니다 kam.sa.ham.ni.da
+고맙습니다 ko.map.sʌm.ni.da
+죄송합니다 d͡cwʌ.soŋ.ham.ni.da
+미안합니다 mi.an.ham.ni.da
+네 ne
+아니요 a.ni.yo
+
+# Common words
+나 na
+너 nʌ
+저 d͡ʑʌ
+그 geu
+그녀 geu.nʲʌ
+이 i
+그 geu
+저 d͡ʑʌ
+여기 jʌ.ɡi
+거기 kʌ.ɡi
+저기 d͡ʑʌ.ɡi
+
+# Numbers (native Korean)
+하ŋ ha.n
+둘 tul
+셋 set
+넷 net
+다석 ta.sʌt
+여석 jʌ.sʌt
+일곱 il.gop
+여덟 jʌ.tʌl
+아홉 a.hop
+열 jʌl
+
+# Numbers (Sino-Korean)
+일 il
+이 i
+삼 sam
+사 sa
+오 o
+육 juk
+칟 tɕʰil
+팟 pʰal
+구 ku
+십 sip
+
+# Family terms
+아버지 a.bʌ.d͡ʑi
+어머니 ʌ.mʌ.ni
+형 hʲʌŋ
+누나 nu.na
+오빠 o.ppa
+여동생 jʌ.doŋ.sʌŋ
+남동생 nam.doŋ.sʌŋ
+할아버지 ha.rʌ.bʌ.d͡ʑi
+할머니 ha.rʌ.mʌ.ni
+
+# Common objects
+집 tɕip
+문 mun
+창문 tɕʰaŋ.mun
+책 tɕʰɛk
+연필 jʌn.pʰil
+책상 tɕʰɛk.saŋ
+의자 ui.d͡ʑa
+
+# Food and drinks
+물 mul
+빈 ppang
+밥 pap
+고기 ko.ɡi
+생선 saŋ.sʌn
+차 tɕʰa
+커피 kʰʌ.pʰi
+우유 u.ju
+
+# Time and weather
+날 nal
+밥 pam
+아침 a.tɕʰim
+저녂 d͡ʑʌ.nʲʌk
+해 hɛ
+달 tal
+비 pi
+눈 nun
+
+# Common verbs
+이다 i.ta
+있다 it.ta
+하ŋ ha.ta
+가ŋ ka.ta
+오ŋ o.ta
+보ŋ po.ta
+먹ŋ mʌk.ta
+마시ŋ ma.si.ta
+자ŋ d͡ʑa.ta
+
+# Question words
+무엇 mu.ʌt
+누구 nu.ku
+언제 ʌn.d͡ʑe
+ʌ디 ʌ.di
+어떻게 ʌ.t͡tʰʌ.ke
+왜 waɛ
+어느 ʌ.nu
+몇 mjʌt
+
+# Particles (essential for Korean grammar)
+은/ŭn eun
+는/nʌn neun
+을/eul eul
+를/rʌl reul
+이/i
+가/ɡa ga
+에/e e
+에게/eɡe ege
+에서/esʌ eseo
+와/wa wa
+과/ɡwa gwa
+의/ui ui
+도/do do
+만/man man
+까지/kkaji kkaji
+부터/pʌtʰʌ pʌtʰʌ
+
+# Common adjectives
+좋ŋ d͡ʑo.ta
+나쁘ŋ na.ppʌ.ɯ.ta
+크ŋ kʰɯ.ta
+작ŋ tɕak.ta
+아름다우ŋ a.rɯm.da.u.ta
+친절하ŋ tɕʰin.d͡ʑʌl.ha.ta
+어렵ŋ ʌ.rjʌp.ta
+쉽ŋ swip.ta
+새로우ŋ sæ.ro.u.ta
+오래된 o.ræ.dwen
+
+# Days of the week
+월요일 wʌl.jo.il
+화요일 hwa.jo.il
+수요일 su.jo.il
+목요il moɡ.jo.il
+금요일 kɯm.jo.il
+토요일 tʰo.jo.il
+일요일 il.jo.il
+
+# Common places
+학교 hak.kjo
+회사 hwe.sa
+가게 ka.ke
+병원 pʲʌŋ.wʌn
+우체국 u.tɕʰe.ɡuk
+도서판 to.so.kwan
+역 jʌk
+공궁 koŋ.wʌn
+
+# Common phrases
+어떻게 지내세요 ʌ.t͡tʰʌ.ke d͡ʑi.ne.se.yo
+잘 지내세요 d͡ʑal d͡ʑi.ne.se.yo
+만나서 반갑습니다 man.na.seo pan.gap.sʌm.ni.da
+천만에요 tɕʰʌn.man.e.yo
+괜찮아요 kwæn.tɕʰan.a.yo
+사랑해 sa.raŋ.hɛ
+미안해 mi.an.hɛ
+고마워 ko.ma.wʌ
+
+# Colors
+빨강 ppal.ɡaŋ
+파란 pa.ran
+하얀 ha.jan
+까망 kka.maŋ
+노란 no.ran
+초록 tɕʰo.rok
+보라 po.ra
+갈색 kal.saek
+
+# Time expressions
+한시 han.si
+두시 du.si
+삼분 sam.pun
+네분 ne.pun
+다섯시 ta.sʌt.si
+여섯시 jʌ.sʌt.si
+일곱시 il.gop.si
+여덟시 jʌ.tʌl.si
+아홉시 a.hop.si
+열시 jʌl.si
+
+# Common verbs (conjugated forms)
+먹어요 mʌ.ɡʌ.jo
+마셔요 ma.ɕʌ.jo
+가요 ka.jo
+와yo wa.jo
+봐요 pwa.jo
+해요 hɛ.jo
+있어요 i.sʌ.jo
+없어요 ʌp.sʌ.jo

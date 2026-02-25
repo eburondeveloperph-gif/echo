@@ -14,6 +14,7 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 import { LANGUAGE_OPTIONS } from '@/lib/constants/languages';
+import { TTS_MODEL_ALIAS } from '@/lib/constants/modelAliases';
 import { useGenerationForm } from '@/lib/hooks/useGenerationForm';
 import { useProfile, useProfiles } from '@/lib/hooks/useProfiles';
 import { useAddStoryItem, useStory } from '@/lib/hooks/useStories';
@@ -415,10 +416,10 @@ export function FloatingGenerateBox({
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="1.7B" className="text-xs text-muted-foreground">
-                              Qwen3-TTS 1.7B
+                              {`${TTS_MODEL_ALIAS} 1.7B`}
                             </SelectItem>
                             <SelectItem value="0.6B" className="text-xs text-muted-foreground">
-                              Qwen3-TTS 0.6B
+                              {`${TTS_MODEL_ALIAS} 0.6B`}
                             </SelectItem>
                           </SelectContent>
                         </Select>

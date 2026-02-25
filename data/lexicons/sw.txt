@@ -1,0 +1,177 @@
+# Swahili Lexicon for Eburon Echo
+# This file contains common Swahili words and their phonetic pronunciations
+# Format: neno_lahajisha phonetic_pronunciation
+
+# Common greetings and expressions
+jambo d͡ʒam.bo
+habari ha.ˈba.ri
+salamu aleikum sa.ˈla.mu a.lei.ˈkum
+shikamoo ʃi.ka.ˈmoː
+marahaba ma.ra.ˈha.ba
+asante a.ˈsan.te
+asante sana a.ˈsan.te ˈsa.na
+karibu ka.ˈri.bu
+tafadhali ta.fa.ˈða.li
+ndiyo ˈn.di.jo
+hapana ha.ˈpa.na
+
+# Common words
+mimi ˈmi.mi
+wewe ˈwe.we
+yeye ˈje.je
+huyu hu.ˈju
+huyo hu.ˈjo
+hawa ha.ˈwa
+nini ˈni.ni
+api a.ˈpi
+gani ˈɡa.ni
+pini ˈpi.ni
+
+# Numbers
+moja ˈmo.d͡ʒa
+mbili ˈm.bi.li
+tatu ˈta.tu
+nne ˈn.ne
+tano ˈta.no
+sita ˈsi.ta
+saba ˈsa.ba
+nane ˈna.ne
+tisa ˈti.sa
+kumi ˈku.mi
+
+# Family terms
+baba ˈba.ba
+mama ˈma.ma
+kaka ˈka.ka
+dada ˈda.da
+mtoto m.ˈto.to
+mwana m.ˈwa.na
+mjukuu m.ˈju.kuː.u
+babu ˈba.bu
+nyanya ˈɲa.ɲa.ɲa
+
+# Common objects
+nyumba ˈɲum.ba
+mlango m.ˈlaŋ.ɡo
+dirisha di.ˈri.ʃa
+kitabu ki.ˈta.bu
+kalamu ka.ˈla.mu
+meza ˈme.za
+kiti ki.ˈti
+chumba ˈtʃum.ba
+
+# Food and drinks
+maji ˈma.d͡ʒi
+chakula tʃa.ˈku.la
+ugali u.ˈɡa.li
+samaki sa.ˈma.ki
+nyama ˈɲa.ma
+chai tʃa.i
+kahawa ka.ˈha.wa
+tunda ˈtu.n.da
+
+# Time and weather
+siku ˈsi.ku
+usiku u.ˈsi.ku
+alasiri a.la.ˈsi.ri
+jioni d͡ʒi.o.ˈni
+jua ˈd͡ʒu.a
+mwezi ˈmwe.zi
+mvua m.ˈvu.a
+joto ˈd͡ʒo.to
+baridi ba.ˈri.di
+
+# Common verbs
+kuwa ku.ˈwa
+niliye ni.ˈli.je
+nitakuwa ni.ta.ˈku.wa
+kwenda ku.ˈwen.da
+nina ˈni.na
+ninakula ni.na.ˈku.la
+ninakunywa ni.na.ˈku.ɲa
+ninapenda ni.na.ˈpen.da
+kufanya ku.ˈfa.na
+kusema ku.ˈse.ma
+
+# Question words
+nani ˈna.ni
+nini ˈni.ni
+wapi ˈwa.pi
+lini ˈli.ni
+lapi ˈla.pi
+kwa nini kwa ˈni.ni
+kwa gani kwa ˈɡa.ni
+kiasi gani ki.a.ˈsi ˈɡa.ni
+
+# Prepositions
+na na
+wa wa
+kwa kwa
+katika ka.ˈti.ka
+mwa m.ˈwa
+juu ya d͡ʒuː ja
+chini ya ˈtʃi.ni ja
+karibu na ka.ˈri.bu na
+
+# Common adjectives
+nzuri ˈn.zu.ri
+mbaya ˈm.ba.ja
+kubwa ˈku.bwa
+ndogo ˈn.do.ɡo
+pya ˈpja
+zuri ˈzu.ri
+zote ˈzo.te
+nyingi ˈɲiŋ.ɡi
+chache ˈtʃa.tʃe
+refu re.ˈfu
+
+# Colors
+nyekundu ˈɲe.kun.du
+nyeusi ˈɲe.u.si
+nyeupe ˈɲe.u.pe
+nyabulu ˈɲa.bu.lu
+kijani ki.ˈd͡ʒa.ni
+machi ma.ˈtʃi.i
+waridi wa.ˈri.di
+rangi ya asili raŋ.ɡi ja a.ˈsi.li
+
+# Days of the week
+jumatatu d͡ʒu.ma.ˈta.tu
+jumanne d͡ʒu.ˈman.ne
+jumatano d͡ʒu.ma.ˈta.no
+alhamisi a.l.ʱa.ˈmi.si
+ijumaa i.d͡ʒu.ˈmaː.a
+jumamosi d͡ʒu.ma.ˈmo.si
+jumapili d͡ʒu.ma.ˈpi.li
+
+# Common places
+shule ˈʃu.le
+mji m.ˈd͡ʒi
+mji mkubwa m.ˈd͡ʒi ˈku.bwa
+soko ˈso.ko
+kanisa ka.ˈni.sa
+msikiti m.ˈsi.ki.ti
+hospitali ho.s.pi.ˈta.li
+ofisi o.ˈfi.si
+
+# Common phrases
+najisoma na.ˈd͡ʒi.so.ma
+ninasema ni.na.ˈse.ma
+ninafurahi ni.na.fu.ˈra.ʔi
+samahani sa.ma.ˈha.ni
+polepole po.le.po.le
+karibu tena ka.ˈri.bu ˈte.na
+tuonane tu.o.ˈna.ne
+kwa heri kwa ˈhe.ri
+
+# Animals
+simba ˈsim.ba
+tembo te.ˈm.bo
+chui ˈtʃu.i
+punda ˈpun.da
+kuku ˈku.ku
+mbwa ˈm.bwa
+paka ˈpa.ka
+nyoka ˈɲo.ka
+nyuki ˈɲu.ki
+samaki sa.ˈma.ki

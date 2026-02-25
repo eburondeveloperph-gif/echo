@@ -1,6 +1,6 @@
-# Contributing to Voicebox
+# Contributing to Eburon Echo
 
-Thank you for your interest in contributing to Voicebox! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to Eburon Echo! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -38,8 +38,8 @@ Thank you for your interest in contributing to Voicebox! This document provides 
 
 1. **Fork and clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/voicebox.git
-   cd voicebox
+   git clone https://github.com/YOUR_USERNAME/eburon-echo.git
+   cd eburon-echo
    ```
 
 2. **Install JavaScript dependencies**
@@ -277,7 +277,7 @@ def create_profile(name, language):
 ## Project Structure
 
 ```
-voicebox/
+eburon-echo/
 ├── app/              # Shared React frontend
 │   └── src/
 │       ├── components/   # UI components
@@ -430,4 +430,4 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 ---
 
-Thank you for contributing to Voicebox! 🎉
+Thank you for contributing to Eburon Echo! 🎉

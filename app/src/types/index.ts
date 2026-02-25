@@ -1,4 +1,4 @@
-// Shared TypeScript types for the voicebox application
+// Shared TypeScript types for the eburon-echo application
 
 export interface VoiceProfile {
   id: string;

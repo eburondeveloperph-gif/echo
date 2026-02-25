@@ -13,6 +13,7 @@ from ..utils.audio import normalize_audio, load_audio
 from ..utils.progress import get_progress_manager
 from ..utils.hf_progress import HFProgressTracker, create_hf_progress_callback
 from ..utils.tasks import get_task_manager
+from ..utils.lexicon import enhance_text_with_lexicon
 
 
 class MLXTTSBackend:
@@ -300,7 +301,7 @@ class MLXTTSBackend:
         Args:
             text: Text to synthesize
             voice_prompt: Voice prompt dictionary with ref_audio and ref_text
-            language: Language code (en or zh) - may not be fully supported by MLX
+            language: Language code (en, zh, tl, nl, nl_be, etc.) - may not be fully supported by MLX
             seed: Random seed for reproducibility
             instruct: Natural language instruction (may not be supported by MLX)
 
@@ -309,7 +310,10 @@ class MLXTTSBackend:
         """
         await self.load_model_async(None)
 
-        print(f"Generating audio for text: {text}")
+        # Enhance text with lexicon for better pronunciation
+        enhanced_text = enhance_text_with_lexicon(text, language)
+
+        print(f"Generating audio for text: {enhanced_text}")
 
         def _generate_sync():
             """Run synchronous generation in thread pool."""
@@ -344,23 +348,23 @@ class MLXTTSBackend:
                     sig = inspect.signature(self.model.generate)
                     if "ref_audio" in sig.parameters:
                         # Generate with voice cloning
-                        for result in self.model.generate(text, ref_audio=ref_audio, ref_text=ref_text):
+                        for result in self.model.generate(enhanced_text, ref_audio=ref_audio, ref_text=ref_text):
                             audio_chunks.append(np.array(result.audio))
                             sample_rate = result.sample_rate
                     else:
                         # Fallback: generate without voice cloning
-                        for result in self.model.generate(text):
+                        for result in self.model.generate(enhanced_text):
                             audio_chunks.append(np.array(result.audio))
                             sample_rate = result.sample_rate
                 else:
                     # No voice prompt, generate normally
-                    for result in self.model.generate(text):
+                    for result in self.model.generate(enhanced_text):
                         audio_chunks.append(np.array(result.audio))
                         sample_rate = result.sample_rate
             except Exception as e:
                 # If voice cloning fails, try without it
                 print(f"Warning: Voice cloning failed, generating without voice prompt: {e}")
-                for result in self.model.generate(text):
+                for result in self.model.generate(enhanced_text):
                     audio_chunks.append(np.array(result.audio))
                     sample_rate = result.sample_rate
             

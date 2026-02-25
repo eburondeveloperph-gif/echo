@@ -1,6 +1,6 @@
 import { Link, useMatchRoute } from '@tanstack/react-router';
 import { Box, BookOpen, Loader2, Mic, Server, Speaker, Volume2 } from 'lucide-react';
-import voiceboxLogo from '@/assets/voicebox-logo.png';
+import eburonAiLogo from '@/assets/eburon-ai-logo.svg';
 import { cn } from '@/lib/utils/cn';
 import { useGenerationStore } from '@/stores/generationStore';
 import { usePlayerStore } from '@/stores/playerStore';
@@ -33,7 +33,7 @@ export function Sidebar({ isMacOS }: SidebarProps) {
     >
       {/* Logo */}
       <div className="mb-2">
-        <img src={voiceboxLogo} alt="Voicebox" className="w-12 h-12 object-contain" />
+        <img src={eburonAiLogo} alt="Eburon AI" className="w-12 h-12 object-contain" />
       </div>
 
       {/* Navigation Buttons */}

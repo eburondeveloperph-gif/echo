@@ -2,6 +2,7 @@
 
 import { Github } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { GITHUB_REPO } from '@/lib/constants';
 
@@ -15,7 +16,15 @@ export function Header() {
             href="/"
             className="flex items-center gap-2 font-bold text-xl sm:text-2xl hover:opacity-80 transition-opacity tracking-tight"
           >
-            Voicebox
+            <Image
+              src="/eburon-ai-logo.svg"
+              alt="Eburon AI Logo"
+              width={28}
+              height={28}
+              className="h-7 w-7"
+              priority
+            />
+            Eburon Echo
           </Link>
 
           {/* Actions */}

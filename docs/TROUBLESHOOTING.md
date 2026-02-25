@@ -1,16 +1,16 @@
 # Troubleshooting Guide
 
-Common issues and solutions for Voicebox.
+Common issues and solutions for Eburon Echo.
 
 ## Installation Issues
 
-### macOS: "Voicebox cannot be opened because it is from an unidentified developer"
+### macOS: "Eburon Echo cannot be opened because it is from an unidentified developer"
 
 **Solution:**
 1. Right-click the `.dmg` file
 2. Select "Open"
 3. Click "Open" in the security dialog
-4. Alternatively, go to System Settings → Privacy & Security → Allow Voicebox
+4. Alternatively, go to System Settings → Privacy & Security → Allow Eburon Echo
 
 ### Windows: "Windows protected your PC"
 
@@ -23,8 +23,8 @@ Common issues and solutions for Voicebox.
 
 **Solution:**
 ```bash
-chmod +x voicebox-*.AppImage
-./voicebox-*.AppImage
+chmod +x eburon-echo-*.AppImage
+./eburon-echo-*.AppImage
 ```
 
 ## Runtime Issues
@@ -46,12 +46,12 @@ chmod +x voicebox-*.AppImage
 3. **Check permissions**
    ```bash
    # macOS/Linux
-   chmod +x tauri/src-tauri/binaries/voicebox-server-*
+   chmod +x tauri/src-tauri/binaries/eburon-echo-server-*
    ```
 
 4. **Check logs**
-   - macOS: Open Console.app and search for "voicebox"
-   - Linux: Check `~/.local/share/voicebox/` for logs
+   - macOS: Open Console.app and search for "eburon-echo"
+   - Linux: Check `~/.local/share/eburon-echo/` for logs
    - Windows: Check Event Viewer
 
 ### "Model download failed"
@@ -216,12 +216,12 @@ chmod +x voicebox-*.AppImage
 
 **Solutions:**
 1. **Check data directory**
-   - macOS: `~/Library/Application Support/voicebox/`
-   - Windows: `%APPDATA%/voicebox/`
-   - Linux: `~/.local/share/voicebox/`
+   - macOS: `~/Library/Application Support/eburon-echo/`
+   - Windows: `%APPDATA%/eburon-echo/`
+   - Linux: `~/.local/share/eburon-echo/`
 
 2. **Check database**
-   - Database: `data/voicebox.db`
+   - Database: `data/eburon-echo.db`
    - Ensure file exists and is readable
 
 3. **Restore from backup**
@@ -232,10 +232,10 @@ chmod +x voicebox-*.AppImage
 
 **Solutions:**
 1. **Close other instances**
-   - Ensure only one Voicebox instance is running
+   - Ensure only one Eburon Echo instance is running
 
 2. **Restart app**
-   - Close and reopen Voicebox
+   - Close and reopen Eburon Echo
 
 3. **Check file permissions**
    - Ensure database file is writable
@@ -293,7 +293,7 @@ chmod +x voicebox-*.AppImage
 2. **Create new issue**
    - Include:
      - OS and version
-     - Voicebox version
+     - Eburon Echo version
      - Steps to reproduce
      - Error messages/logs
      - Screenshots (if applicable)
@@ -305,4 +305,4 @@ chmod +x voicebox-*.AppImage
 
 ---
 
-For more help, open an issue on [GitHub](https://github.com/jamiepine/voicebox/issues).
+For more help, open an issue on [GitHub](https://github.com/jamiepine/eburon-echo/issues).
