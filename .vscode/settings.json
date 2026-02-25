@@ -5,6 +5,8 @@
     "MLX",
     "radix-ui",
     "clsx",
-    "tailwindcss"
+    "tailwindcss",
+    "tauri",
+    "uvicorn"
   ]
 }
