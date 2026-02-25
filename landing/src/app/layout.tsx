@@ -31,6 +31,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className="dark">
+      <head>
+        <link rel="stylesheet" href="https://unpkg.com/@knadh/oat/oat.min.css" />
+        <script src="https://unpkg.com/@knadh/oat/oat.min.js" defer></script>
+      </head>
       <body className={inter.variable}>
         <div className="relative min-h-screen bg-background font-sans flex flex-col">
           <Banner />
